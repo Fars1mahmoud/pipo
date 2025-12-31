@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهنئة بالسنة الجديدة 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* تنسيقات خاصة بصفحة التهنئة */
+        .greeting-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 30px;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .new-year-title {
+            font-size: 42px;
+            background: linear-gradient(to right, #ff69b4, #87ceeb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(255, 105, 180, 0.1);
+        }
+        
+        .year-2026 {
+            font-size: 80px;
+            font-weight: 900;
+            background: linear-gradient(to right, #ff69b4, #dda0dd, #87ceeb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+            margin: 20px 0;
+            animation: glow 2s infinite alternate, pulse 3s infinite;
+        }
+        
+        .message {
+            font-size: 22px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+            background-color: rgba(255, 182, 193, 0.1);
+            padding: 25px;
+            border-radius: 20px;
+            border-right: 4px solid #ff69b4;
+        }
+        
+        .message p {
+            margin-bottom: 15px;
+        }
+        
+        .message p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 15px;
+            height: 15px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        
+        .fireworks {
+            position: fixed;
+            width: 5px;
+            height: 5px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #ff69b4;
+            z-index: -1;
+        }
+        
+        .btn-back {
+            background: linear-gradient(to right, #ff69b4, #dda0dd);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+        
+        .btn-back:hover {
+            background: linear-gradient(to right, #ff1493, #ee82ee);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+        }
+        
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 5px rgba(255, 105, 180, 0.5));
+            }
+            to {
+                filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.8)) drop-shadow(0 0 30px rgba(221, 160, 221, 0.5));
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        /* ألوان الكونفيتي */
+        .confetti {
+            background-color: #ff69b4;
+        }
+        
+        .confetti:nth-child(3n) {
+            background-color: #dda0dd;
+        }
+        
+        .confetti:nth-child(5n) {
+            background-color: #87ceeb;
+        }
+        
+        .confetti:nth-child(7n) {
+            background-color: #ffb6c1;
+        }
+        
+        /* ألوان الألعاب النارية */
+        .fireworks {
+            background-color: #ff69b4;
+            box-shadow: 0 0 10px #ff69b4;
+        }
+        
+        .fireworks:nth-child(3n) {
+            background-color: #dda0dd;
+            box-shadow: 0 0 10px #dda0dd;
+        }
+        
+        .fireworks:nth-child(5n) {
+            background-color: #87ceeb;
+            box-shadow: 0 0 10px #87ceeb;
+        }
+        
+        .fireworks:nth-child(7n) {
+            background-color: #ffb6c1;
+            box-shadow: 0 0 10px #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="greeting-card">
+            <div class="header">
+                <h1 class="new-year-title"><i class="fas fa-gift"></i> كل عام وأنتم بخير</h1>
+            </div>
+            
+            <div class="year-2026 float-animation">2026</div>
+            
+            <div class="message">
+                <p>بمناسبة حلول السنة الجديدة 2026،</p>
+                <p>اتمني لكي سنه سيده مليئه بطاعة الله،</p>
+                <p>وكل ما تتمنونه لأنفسكم وأحبائكم.</p>
+                <p>قد تحقق أحلامكم وتتحقق أمانيكم،</p>
+                <p>وتبقى السعادة رفيقتكي في كل خطوة.</p>
+                <p style="color: #ff69b4; font-weight: bold; margin-top: 15px;">
+                    سنة جديدة سعيدة مليئة بالأمل والبهجة!
+                </p>
+            </div>
+            
+            <div class="fireworks-container" id="fireworks"></div>
+            
+            <button class="btn-back" id="back-btn">
+                <i class="fas fa-arrow-right"></i> حبيبه محمود   
+            </button>
+        </div>
+        
+        <div class="footer">
+            <p>تهانينا الحارة بمناسبة السنة الجديدة 2026</p>
+        </div>
+    </div>
+    
+    <script>
+        // التحقق من أن المستخدم قام بتسجيل الدخول
+        document.addEventListener('DOMContentLoaded', function() {
+            const isAuthenticated = localStorage.getItem('authenticated');
+            
+            if (!isAuthenticated || isAuthenticated !== 'true') {
+                // إذا لم يكن المستخدم مسجلاً الدخول، إعادة توجيهه إلى صفحة تسجيل الدخول
+                window.location.href = "index.html";
+                return;
+            }
+            
+            // إنشاء تأثيرات التهنئة
+            createConfetti();
+            createFireworks();
+            
+            // إضافة حدث النقر على زر العودة
+            document.getElementById('back-btn').addEventListener('click', function() {
+                localStorage.removeItem('authenticated');
+                window.location.href = "index.html";
+            });
+            
+            // دالة لإنشاء تأثير الكونفيتي
+            function createConfetti() {
+                const confettiContainer = document.body;
+                const colors = ['#ff69b4', '#dda0dd', '#87ceeb', '#ffb6c1', '#ff1493'];
+                
+                for (let i = 0; i < 200; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    
+                    // تعيين لون عشوائي
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    // تعيين موضع عشوائي
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.top = Math.random() * 100 + 'vh';
+                    
+                    // تعيين حجم عشوائي
+                    const size = Math.random() * 12 + 8;
+                    confetti.style.width = size + 'px';
+                    confetti.style.height = size + 'px';
+                    
+                    // تعيين حركة متعرجة باستخدام CSS animation
+                    const duration = Math.random() * 3 + 2;
+                    confetti.style.animation = `fall ${duration}s linear infinite`;
+                    
+                    confettiContainer.appendChild(confetti);
+                }
+                
+                // إضافة أنيميشن السقوط
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes fall {
+                        0% {
+                            transform: translateY(-100vh) rotate(0deg);
+                            opacity: 1;
+                        }
+                        100% {
+                            transform: translateY(100vh) rotate(360deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            // دالة لإنشاء تأثير الألعاب النارية
+            function createFireworks() {
+                const container = document.getElementById('fireworks');
+                
+                setInterval(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'fireworks';
+                    
+                    // تعيين موضع عشوائي
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 100 + 'vh';
+                    
+                    // تعيين لون عشوائي
+                    const colors = ['#ff69b4', '#dda0dd', '#87ceeb', '#ffb6c1'];
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    firework.style.backgroundColor = color;
+                    firework.style.boxShadow = `0 0 10px ${color}`;
+                    
+                    container.appendChild(firework);
+                    
+                    // توسيع الألعاب النارية قبل اختفائها
+                    setTimeout(() => {
+                        firework.style.transform = 'scale(3)';
+                        firework.style.opacity = '0';
+                    }, 500);
+                    
+                    // حذف الألعاب النارية بعد انتهاء الأنيميشن
+                    setTimeout(() => {
+                        firework.remove();
+                    }, 1000);
+                }, 200);
+            }
+        });
+    </script>
+</body>
+</html>

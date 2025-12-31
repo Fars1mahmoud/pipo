@@ -1,0 +1,210 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffb6c1, #dda0dd, #87ceeb);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    direction: rtl;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* بطاقة تسجيل الدخول */
+.login-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ff69b4, #dda0dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* حقول الإدخال */
+.form-group {
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ff69b4;
+    font-size: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #dda0dd;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    background-color: white;
+}
+
+/* زر الدخول */
+.btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #ff69b4, #dda0dd);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ff1493, #ee82ee);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.3);
+}
+
+/* رسالة الخطأ */
+.error-message {
+    color: #ff69b4;
+    margin-top: 10px;
+    font-weight: 600;
+    min-height: 24px;
+    text-align: center;
+}
+
+/* التلميح */
+.hint {
+    background-color: rgba(255, 182, 193, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-right: 4px solid #ff69b4;
+}
+
+.hint p {
+    color: #ff69b4;
+    font-size: 16px;
+}
+
+/* عرض السنة */
+.year-display {
+    background: linear-gradient(to right, rgba(255, 105, 180, 0.1), rgba(221, 160, 221, 0.1));
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 105, 180, 0.2);
+}
+
+.year-number {
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(to right, #ff69b4, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+    margin-bottom: 10px;
+}
+
+.year-display p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* التذييل */
+.footer {
+    color: rgba(255, 105, 180, 0.8);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* أيقونات */
+i {
+    margin-left: 8px;
+}
+
+/* تأثيرات للرسوم المتحركة */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.year-number {
+    animation: pulse 2s infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.login-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 600px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .year-number {
+        font-size: 50px;
+    }
+}
